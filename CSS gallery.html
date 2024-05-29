@@ -1,0 +1,120 @@
+<html !DOCTYPE>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS responsive gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+
+    body {
+        max-width: 1030px;
+        width: 90%;
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+    }
+
+   .container {
+        position: relative;
+        max-width: 1024px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 8px;
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(rgb(86, 169, 201) 75%, white 25%);
+        border: 1px solid;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .container {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        .container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    h1 {
+        float: left;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .content {
+        max-width: 850px;
+        width: 90%;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+</style>
+    
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+    <div class="container">
+        <div class="box">
+            <img src="placeholder-image.png" alt="placeholder-image">
+            <p>Image title</p>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="placeholder-image">
+            <p>Image title</p>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="placeholder-image">
+            <p>Image title</p>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="placeholder-image">
+            <p>Image title</p>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="placeholder-image">
+            <p>Image title</p>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="placeholder-image">
+            <p>Image title</p>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="placeholder-image">
+            <p>Image title</p>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="placeholder-image">
+            <p>Image title</p>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="placeholder-image">
+            <p>Image title</p>
+        </div>
+        <div class="box">
+            <img src="placeholder-image.png" alt="placeholder-image">
+            <p>Image title</p>
+        </div>
+    </div>
+    <div class="content">
+        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit magna neque, non pulvinar nisi viverra non. Ut fermentum leo non tempor cursus. Duis et arcu tincidunt, condimentum dui iaculis, porta velit. Praesent laoreet, mauris in tincidunt tincidunt, ligula est suscipit ex, vitae placerat augue ligula vel dui. Nunc eget gravida urna.</p>
+    </div>
+</body>
+</html>
